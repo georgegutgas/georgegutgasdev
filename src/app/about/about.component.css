@@ -1,0 +1,17 @@
+.iconos {
+    width: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+.cont-about {
+    margin-top: 80px;
+}

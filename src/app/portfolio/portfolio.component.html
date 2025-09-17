@@ -1,0 +1,37 @@
+<div class="row cont-portfolio w-100 p-0 text-center">
+    <h2>Portfolio</h2>
+    <p class="row text-start">📌 As practice makes perfect, here’s a list of some of my personal projects.</p>
+    @for(portfolio of portfolios; track portfolio) {
+        <div class="cartas col-12 col-md-6 mt-3">
+            <div class="cartas-inner w-100">
+                <div class="cartas-front">
+                    <p class="m-0 bg-body w-100">{{portfolio.name}}</p>
+                    <img class="w-100 h-100" [src]="portfolio.urlImg" alt="PlatziConf">
+                </div>
+                <div class="cartas-back">
+                    <p class="m-0 w-100 bg-body">{{portfolio.name}}</p>
+                    <div class="bg-black pt-4 w-100 h-100">
+                        <p>Code</p>
+                        <p>Live Preview</p>
+                        <p>Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <!-- <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Front Side</div>
+            <div class="card-back">Back Side</div>
+        </div>
+    </div> -->
+
+    <footer class="text-center mt-4">
+        <p>
+            Made with 💜
+        </p>
+        <p>
+            © 2025 George Gutierrez.
+        </p>
+    </footer>
+</div>
