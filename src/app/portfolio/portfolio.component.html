@@ -2,18 +2,18 @@
     <h2>Portfolio</h2>
     <p class="row text-start">📌 As practice makes perfect, here’s a list of some of my personal projects.</p>
     @for(portfolio of portfolios; track portfolio) {
-        <div class="cartas col-12 col-md-6 mt-3">
-            <div class="cartas-inner w-100">
+        <div class="cartas col-12 col-md-6 mt-5">
+            <div class="cartas-inner">
                 <div class="cartas-front">
                     <p class="m-0 bg-body w-100">{{portfolio.name}}</p>
                     <img class="w-100 h-100" [src]="portfolio.urlImg" alt="PlatziConf">
                 </div>
-                <div class="cartas-back">
+                <div class="cartas-back h-100">
                     <p class="m-0 w-100 bg-body">{{portfolio.name}}</p>
-                    <div class="bg-black pt-4 w-100 h-100">
-                        <p>Code</p>
-                        <p>Live Preview</p>
-                        <p>Learn More</p>
+                    <div class="d-flex flex-column bg-black pt-4 w-100 h-100">
+                        <a [href]="portfolio.urlCode" class="mt-3">Code</a>
+                        <a [href]="portfolio.urlPage" class="mt-4">Live Preview</a>
+                        <a href="/" class="mt-5">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
         </div>
     </div> -->
 
-    <footer class="text-center mt-4">
+    <footer class="text-center mt-5">
         <p>
             Made with 💜
         </p>

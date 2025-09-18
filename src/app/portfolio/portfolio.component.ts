@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Portfolio } from './portfolio';
+import { PortfolioService } from './portfolio.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,30 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
-  portfolios = [
-    {
-      name: 'PlatziConf',
-      urlImg: 'img/platziconf.png'
-    },
-    {
-      name: '100tifi.co',
-      urlImg: 'img/100tifico.png'
-    },
-    {
-      name: 'Bienes Raices',
-      urlImg: 'img/bienesraices.png'
-    },
-    {
-      name: 'Blog DeCafe',
-      urlImg: 'img/blogdecafe.png'
-    },
-    {
-      name: 'Full Stack',
-      urlImg: 'img/fullstack.png'
-    },
-    {
-      name: 'Presupuestos',
-      urlImg: 'img/presupuestos.png'
-    }
-  ];
+  portfolios: Portfolio[] = [];
+
+  constructor(private portfolioService: PortfolioService){}
+
+  ngOnInit() {
+    this.portfolios = this.portfolioService.obtenerPortfolios();
+  }
 }
