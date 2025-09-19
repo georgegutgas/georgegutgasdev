@@ -3,10 +3,11 @@ import { Tecnologies } from '../tecnologies/tecnologies';
 import { TecnologiesService } from '../tecnologies/tecnologies.service';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule],
+  imports: [CommonModule, FooterComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

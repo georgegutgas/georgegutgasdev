@@ -1,7 +1,69 @@
+.a-inline {
+  display: inline-block;
+}
+
 .link:hover {
   filter: brightness(80%);
 }
 
 .color-white {
     color: white;
+}
+
+.iconos-bar {
+  /* fill: rgba(255, 255, 255, 0.55); */
+  stroke-width: 4;
+}
+
+.iconos-bar:hover {
+  fill: #33aaff;
+}
+
+/* Iconos */
+.linkiconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cont-iconos {
+  width: 24px;
+  height: 24px;  
+  position: relative;
+  overflow: hidden;
+}
+
+.cont-iconos span {
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.cont-iconos span:first-child {
+  transform: translateX(0); 
+}
+
+.cont-iconos span:last-child {
+  transform: translateX(-100%); 
+}
+
+.linkiconos:hover .cont-iconos span:first-child {
+  transform: translateX(100%); 
+}
+
+.linkiconos:hover .cont-iconos span:last-child {
+  transform: translateX(0); 
+}
+
+.cont-iconos[data-animation="to-right"] span:last-child {
+  transform: translateY(-100%); 
+}
+
+.cont-iconos[data-animation="to-right"]:hover span:first-child {
+  transform: translateY(100%); 
+}
+
+.cont-iconos[data-animation="to-right"]:hover span:last-child {
+  transform: translateY(0); 
 }
