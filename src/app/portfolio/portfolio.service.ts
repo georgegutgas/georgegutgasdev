@@ -26,7 +26,7 @@ export class PortfolioService {
     {
       name: 'Bienes Raices',
       urlImg: 'img/bienesraices.png',
-      urlCode: '',
+      urlCode: 'https://github.com/georgegutgas/bienesraices',
       urlPage: 'https://bienesraices-ggg.netlify.app/',
       description: 'Pagina web donde se pone en práctica lo aprendido en el curso de Platzi Bootstrap creando una pagina de conferencias con un diseño bonito',
       tecnologies: []
@@ -34,7 +34,7 @@ export class PortfolioService {
     {
       name: 'Blog DeCafe',
       urlImg: 'img/blogdecafe.png',
-      urlCode: 'https://github.com/georgegutgas/platzi-bootstarp-2022',
+      urlCode: 'https://github.com/georgegutgas/blogcafe',
       urlPage: 'https://blogcafe-ggg.netlify.app/',
       description: 'Pagina web donde se pone en práctica lo aprendido en el curso de Platzi Bootstrap creando una pagina de conferencias con un diseño bonito',
       tecnologies: []
@@ -42,7 +42,7 @@ export class PortfolioService {
     {
       name: 'Full Stack',
       urlImg: 'img/fullstack.png',
-      urlCode: 'https://github.com/georgegutgas/platzi-bootstarp-2022',
+      urlCode: 'https://github.com/georgegutgas/fullstack',
       urlPage: 'https://fullstack-ggg.netlify.app/',
       description: 'Pagina web donde se pone en práctica lo aprendido en el curso de Platzi Bootstrap creando una pagina de conferencias con un diseño bonito',
       tecnologies: []
@@ -50,7 +50,7 @@ export class PortfolioService {
     {
       name: 'Presupuestos',
       urlImg: 'img/presupuestos.png',
-      urlCode: 'https://github.com/georgegutgas/platzi-bootstarp-2022',
+      urlCode: 'https://github.com/georgegutgas/app-presupuestos',
       urlPage: 'https://presupuestos-ggg.netlify.app/',
       description: 'Pagina web donde se pone en práctica lo aprendido en el curso de Platzi Bootstrap creando una pagina de conferencias con un diseño bonito',
       tecnologies: []

@@ -1,16 +1,16 @@
+
+.t-morado {
+    color: rgba(188, 51, 222, 1);
+}
+
+.devicon-github-original.iconos {
+    font-size: 20px;
+}
+
+
 .cont-portfolio {
     margin-top: 80px;
 }
-
-/* img:hover {
-    opacity: 0.1;
-} */
-
-/* .cartas {
-    width: 320px;
-    height: 100px;
-    perspective: 1000px;
-} */
 
 .cartas-inner {
     position: relative;
@@ -39,8 +39,75 @@
 
 .cartas-back {
     transform: rotateY(180deg);
+    height: 200px;
 }
 
 .cartas img {
     object-fit: cover;
+}
+
+.cartas-back a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    filter: brightness(80%);
+}
+
+.cartas-back a:hover {
+    filter: brightness(100%);
+}
+
+.cartas-back i {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Animaciones del card-back */
+.adelgit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github {
+  width: 24px;
+  height: 24px;  
+  position: relative;
+  overflow: hidden;
+}
+
+.github span {
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.github span:first-child {
+  transform: translateX(0); 
+}
+
+.github span:last-child {
+  transform: translateX(-100%); 
+}
+
+.adelgit:hover .github span:first-child {
+  transform: translateX(100%); 
+}
+
+.adelgit:hover .github span:last-child {
+  transform: translateX(0); 
+}
+
+.github[data-animation="to-right"] span:last-child {
+  transform: translateY(-100%); 
+}
+
+.github[data-animation="to-right"]:hover span:first-child {
+  transform: translateY(100%); 
+}
+
+.github[data-animation="to-right"]:hover span:last-child {
+  transform: translateY(0); 
 }
