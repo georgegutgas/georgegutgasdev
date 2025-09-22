@@ -1,0 +1,67 @@
+<div class="row mt-5 text-start">
+  <!-- Nombre del proyecto -->
+  <h2 class="text-center fs-1">{{portfolio.name}}</h2>
+  <div class="row mt-5">
+    <!-- Pequeña descripcion -->
+    <p>📌 {{portfolio.shortDesc}}</p>
+    <!-- Botones anteriores de GIT y PAGINA WEB -->
+      <div class="d-flex fw-bold my-4">
+        <button class="btn-code btn btn-dark me-3">
+          <span>
+            Code
+          </span>
+          <span>
+              <i class="devicon-github-original iconos"></i>
+          </span>
+        </button>
+        <button class="btn-preview btn">
+          <span>
+            Live Preview
+          </span>
+          <svg class="iconos-bar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+      </button>
+     </div>
+
+    <!-- 3 Imagenes -->
+     <div class="container my-5">
+       <img class="w-100"
+         [src]="portfolio.urlImg"
+         alt="Imagen de la pagina web del portafolio seleccionado"
+       />
+       <!-- Tres puntitos para visualizar las 3 imagenes -->
+       <p class="text-center fs-1">...</p>
+
+     </div>
+    
+    <div class="container mb-4">
+      <h3>About</h3>
+      <!-- Descripcion del proyecto -->
+      <p>
+        {{portfolio.description}}
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>Technologies</h3>
+      <!-- Tecnologias del arreglo del portfolio -->
+      <ul class="ps-0">
+          @for(tecnologia of portfolio.tecnologies; track tecnologia) {
+              <li class="d-flex">
+                  <div class="iconos me-2" [innerHTML]="buscarTecnologia(tecnologia.name)"></div>
+                  <span>
+                      {{tecnologia.name}}
+                  </span>
+              </li>
+          }
+          <!-- <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li> -->
+      </ul>
+    </div>
+
+    
+  </div>
+</div>
+<app-footer/>

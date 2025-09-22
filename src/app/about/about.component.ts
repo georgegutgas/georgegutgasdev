@@ -24,6 +24,6 @@ export class AboutComponent {
       name: tech.name,
       img: this.sanitizer.bypassSecurityTrustHtml(tech.img)
     }))
-    console.log(this.tecnologias);
+    // console.log(this.tecnologias);
   }
 }
