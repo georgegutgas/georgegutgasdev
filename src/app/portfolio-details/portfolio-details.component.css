@@ -2,7 +2,10 @@
     width: 20px;
 }
 
-
+.botones {
+    display: flex;
+    flex-direction: column;
+}
 
 .btn {
     border-radius: 30px;
@@ -22,6 +25,16 @@
 
 .btn-code .iconos {
     font-size:20px;
+}
+
+@media (min-width: 992px) {
+    .botones {
+        flex-direction: row;
+
+    }
+    .botones a {
+        width: 50%;
+    }
 }
 
 .carousel-control-prev-icon,

@@ -10,5 +10,5 @@ import { NavegadorComponent } from './navegador/navegador.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'georgegutgas';
+  title = 'georggg';
 }

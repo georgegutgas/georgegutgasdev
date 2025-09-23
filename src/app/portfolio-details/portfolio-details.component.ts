@@ -3,13 +3,13 @@ import { PortfolioService } from '../portfolio/portfolio.service';
 import { TecnologiesService } from '../tecnologies/tecnologies.service';
 import { Tecnologies } from '../tecnologies/tecnologies';
 import { Portfolio } from '../portfolio/portfolio';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-portfolio-details',
-  imports: [FooterComponent],
+  imports: [FooterComponent, RouterLink],
   templateUrl: './portfolio-details.component.html',
   styleUrl: './portfolio-details.component.css'
 })

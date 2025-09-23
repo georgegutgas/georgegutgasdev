@@ -1,18 +1,19 @@
-<div class="text-center fondo">
-  <div class="row">
-    <div class=" row col-md-12">
-        <div class="vertical-line col-md-2 d-flex justify-content-center position-relative">
-            <a routerLink="/" class="mt-5 fw-medium link">georgegutgas.dev</a>
-        </div>
-        <div class="col-md-8">
-            <!-- <app-principal/> -->
-             <router-outlet></router-outlet>
-        </div>
-        <div class="vertical-line col-md-2 d-flex justify-content-center position-relative">
-            <app-navegador/>
-        </div>
-
-        
+<div class="fondo">
+  <div class="container">
+    <div class="contenedor text-center">
+      <div class="vertical-line d-flex justify-content-start align-items-center position-relative">
+        <a routerLink="/" class="mt-5 fw-bold link">georggg.dev</a>
       </div>
+      <div class="principal">
+        <!-- <app-principal/> -->
+        <router-outlet></router-outlet>
+      </div>
+      <div class="vertical-line d-flex justify-content-end align-items-center position-relative">
+        <app-navegador/>
+      </div>
+    </div>
+
   </div>
+
 </div>
+  
