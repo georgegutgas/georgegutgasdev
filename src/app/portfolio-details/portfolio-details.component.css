@@ -11,6 +11,7 @@
 .btn-code {
     width: 250px;
     height: 50px;
+    /* background-color: #000; */
 }
 
 .btn-preview {
@@ -21,4 +22,19 @@
 
 .btn-code .iconos {
     font-size:20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:  rgba(188, 51, 222, 1);
+    filter: invert(1);
+    --bs-carousel-control-color: #ffc107;
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    background-color: rgba(131, 133, 134, 0.6);
+    /* color: rgba(188, 51, 222, 1); */
+    border-radius: 10px;
+    /* padding: 20px; */
 }
