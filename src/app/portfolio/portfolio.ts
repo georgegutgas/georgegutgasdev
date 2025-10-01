@@ -9,5 +9,6 @@ export class Portfolio {
     urlImg3!: string;
     urlCode!: string;
     urlPage!: string;
-    tecnologies!: Tecnologies[]
+    tecnologies!: Tecnologies[];
+    isLoaded!: boolean;
 }

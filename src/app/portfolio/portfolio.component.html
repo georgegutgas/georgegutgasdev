@@ -6,13 +6,23 @@
             <div class="cartas-inner">
                 <div class="cartas-front">
                     <p class="m-0 py-1 bg-body w-100">{{portfolio.name}}</p>
+                    @if (!portfolio.isLoaded) {
+                        <div class="spinner-container">
+                            <div class="spinner-border text-primary" role="status"></div>
+                            <!-- <span class="loading-text">Cargando...</span> -->
+                        </div>
+                    }
                     <div class="image-wrapper">
                         <img 
                             class="w-100 h-100" 
                             ngSrc="{{portfolio.urlImg}}" 
                             alt="Portfolio Image" 
                             fill 
-                            [priority]="i === 0">
+                            [priority]="i === 0"
+                            (load)="onImageLoad(portfolio)"
+                            [class.loaded]="portfolio.isLoaded"
+                            placeholder="Loading..."   
+                        >
                     </div>
                 </div>
                 <div class="cartas-back h-100">

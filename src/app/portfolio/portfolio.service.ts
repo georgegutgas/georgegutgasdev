@@ -20,7 +20,8 @@ export class PortfolioService {
         {name: 'HTML', img: ''},
         {name: 'CSS', img: ''},
         {name: 'JavaScript', img: ''},
-      ]
+      ],
+      isLoaded: false
     },
     {
       name: 'Presupuestos',
@@ -37,7 +38,8 @@ export class PortfolioService {
         {name: 'Bootstrap', img: ''},
         {name: 'Angular', img: ''},
         {name: 'TypeScript', img: ''},
-      ]
+      ],
+      isLoaded: false
     },
     {
       name: '100tifi.co',
@@ -52,7 +54,8 @@ export class PortfolioService {
         {name: 'HTML', img: ''},
         {name: 'CSS', img: ''},
         {name: 'JavaScript', img: ''},
-      ]
+      ],
+      isLoaded: false
     },
     {
       name: 'Bienes Raices',
@@ -66,7 +69,8 @@ export class PortfolioService {
       tecnologies: [
         {name: 'HTML', img: ''},
         {name: 'CSS', img: ''}
-      ]
+      ],
+      isLoaded: false
     },
     {
       name: 'Blog DeCafe',
@@ -80,7 +84,8 @@ export class PortfolioService {
       tecnologies: [
         {name: 'HTML', img: ''},
         {name: 'CSS', img: ''}
-      ]
+      ],
+      isLoaded: false
     },
     {
       name: 'Full Stack',
@@ -94,7 +99,8 @@ export class PortfolioService {
       tecnologies: [
         {name: 'HTML', img: ''},
         {name: 'CSS', img: ''}
-      ]
+      ],
+      isLoaded: false
     },
     
   ];

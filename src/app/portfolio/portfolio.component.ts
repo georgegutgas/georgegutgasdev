@@ -25,4 +25,8 @@ export class PortfolioComponent {
   portfolioDetail(name: string) {
     this.enrutador.navigate(['portfolio', name]);
   }
+
+  onImageLoad(portfolio: Portfolio): void {
+    portfolio.isLoaded = true;
+  }
 }
