@@ -3,11 +3,11 @@ import { Portfolio } from './portfolio';
 import { PortfolioService } from './portfolio.service';
 import { FooterComponent } from "../footer/footer.component";
 import { Router, RouterLink } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [FooterComponent, RouterLink, CommonModule],
+  imports: [FooterComponent, RouterLink, CommonModule, NgOptimizedImage],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
