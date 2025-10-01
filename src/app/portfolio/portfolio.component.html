@@ -6,7 +6,14 @@
             <div class="cartas-inner">
                 <div class="cartas-front">
                     <p class="m-0 py-1 bg-body w-100">{{portfolio.name}}</p>
-                    <img class="w-100 h-100" ngSrc="{{portfolio.urlImg}}" alt="Portfolio Image" fill [priority]="i === 0">
+                    <div class="image-wrapper">
+                        <img 
+                            class="w-100 h-100" 
+                            ngSrc="{{portfolio.urlImg}}" 
+                            alt="Portfolio Image" 
+                            fill 
+                            [priority]="i === 0">
+                    </div>
                 </div>
                 <div class="cartas-back h-100">
                     <p class="m-0 py-1 w-100 bg-body">{{portfolio.name}}</p>
